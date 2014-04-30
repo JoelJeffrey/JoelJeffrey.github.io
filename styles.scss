@@ -1,0 +1,358 @@
+$purple: #97889c;
+$brown: #75685f;
+$grey: #bfbdbc;
+$dark-grey: #9d9b9a;
+
+$white: #fff;
+$green: #87a6a3;
+$yellow: #FDFCC7;
+$orange: #E87F6F;
+$blue: #5f7a95;
+$tan-bg: #f6f0e9;
+
+* {
+	padding: 0;
+	margin: 0;
+	&::selection {
+		background: #d36E56;
+		color: $white;
+	}
+}
+h1 {
+	font-style: italic;
+	font-weight: lighter;
+}
+.careers-page-wrap {
+	margin: 0 auto;
+	padding-bottom: 60px;
+	background-color: $tan-bg;
+	min-width: 1200px;
+
+	font-family: "Trebuchet MS", sans-serif;
+	text-align: center;
+	font-size: 16px;
+	letter-spacing: 1.5px;
+	color: #333;
+}
+header { 
+	position: fixed;
+	top: 0;
+	z-index: 5; 
+	h5 {
+		margin: 15px 0 0 50px;
+
+		font-size: 30px;
+		color: $grey;
+		font-weight: lighter;
+		font-style: italic;
+		letter-spacing: -1px;
+	}
+}
+.masthead {
+	height: 1000px;
+
+	background: url(images/hotel-bg.jpg) no-repeat;
+	background-size: cover;
+	h1 {
+		padding: 15% 0 60px;
+
+		font-size: 100px;
+		color: $white;
+	}
+	span {
+		text-transform: uppercase;
+		font-size: 22px;
+		font-weight: bold;
+		letter-spacing: 1.5px;
+		color: $green;
+	}
+}
+.jobs {
+	min-width: 600px;
+	width: 800px;
+	height: 80px;
+	margin: 50px auto;
+	a {
+		font-size: 22px;
+		color: $orange;
+		text-transform: uppercase;
+		&:hover {
+			color: #333;
+		}
+	}
+	li {
+		display: inline;
+	}
+}
+.hire {
+	height: 750px;
+
+	background-color: $tan-bg;
+	h1 {
+		padding: 60px;
+		font-size: 60px;
+		color: $purple;
+	}
+	p > a, span > a {
+		color: $blue;
+		&:hover {
+			color: #333;
+		}
+	}
+	p {
+		width:  700px;
+		margin: 0 auto;
+		text-align: left;
+		line-height: 30px;
+	}
+	li {
+		float: left;
+	}
+	li:nth-child(2) {
+		float: right;
+	}
+	li:last-child {
+		padding-top: 10px;
+		clear: both;
+	}
+	span {
+		color: $grey;
+	}
+}
+.careers {
+	height: 750px;
+
+	background-color: $brown;
+	h1 {
+		padding: 80px 0 30px;
+		width: 900px;
+		margin: 0 auto;
+
+		font-size: 60px;
+		color: $grey;
+	}
+	.jobs {
+		width: 50%;
+	}
+	li {
+		line-height: 50px;
+		margin: 0 50px;
+	}
+	img {
+		margin-top: 60px;
+	}
+}
+.benefits {
+	height: 550px;
+	position: relative;
+	.is-active h3 {
+		font-size: 32px;
+		text-decoration: none;
+		transition: all 0.2s;
+	}
+	.triangle {
+		position: absolute;
+		left: 50%;
+		bottom: -20px;
+		margin-left: -20px;
+		width: 0;
+		height: 0;
+		border-left: 20px solid transparent;
+		border-right: 20px solid transparent;
+		border-top: 20px solid $yellow;
+
+		z-index: 1000;
+	}
+	p {
+		display: none;
+		width: 80%;
+		margin: 20px auto;
+		text-align: left;
+		line-height: 30px;
+
+	}
+	.panel {
+		height: 225px;
+		width: 33.33%;
+		display: inline-block;
+		position: relative;
+		cursor: pointer;
+		float: left;
+	}
+	.top, .bottom {
+		height: 165px;
+		width: 100%;
+		h3 {
+			top: 70px;
+		}
+	}
+	h3 {
+		position: relative;
+
+		font-size: 22px;
+		text-decoration: underline;
+		text-transform: uppercase;
+		color: $white;
+
+		transition: all 0.2s;
+	}
+	.top {
+		background-color: $yellow;
+		h3 {
+			color: $grey;
+		}
+	}
+	.left {
+		background-color: $orange;
+		h3 {
+			top: 90px;
+		}
+	}
+	.center {
+		background-color: $white;
+		cursor: default;
+		pointer-events: none;
+		p {
+			display: block;
+
+			-webkit-animation: flipIn 0.5s ease;
+		}
+	}
+	.right {
+		background-color: $purple;
+		h3 {
+			top: 90px;
+		}
+	}
+	.bottom {
+		clear: both;
+
+		background-color: $dark-grey;
+	}
+}
+.your-spot {
+	position: relative;
+	height: 1100px;
+	background: url(images/your-spot-bg.jpg) no-repeat;
+	background-size: cover;
+	a {
+		position: absolute;
+		width: 30px;
+		top: 35%;
+		left: 790px;
+		font-size: 22px;
+		color: $blue;
+		text-transform: uppercase;
+	}
+}
+.stalk {
+	height: 140px;
+	background: url(images/stalk-bg.jpg) repeat #333;
+	line-height: 140px;
+	a {
+		color: $orange;
+		font-size: 40px;
+	}
+}
+footer {
+	text-align: left;
+	position: fixed;
+	bottom: -60px;
+	right: 0;
+	left: 0;
+	height: 60px;
+	background-color: $tan-bg;
+	z-index: 1000;
+	clear: both;
+	overflow: hidden;
+
+	-webkit-transition: all 0.2s linear;
+	li {
+		padding: 0 60px 0 40px;
+
+		display: inline;
+
+		font-size: 20px;
+		line-height: 60px;
+		text-transform: uppercase;
+		font-weight: 800;
+		letter-spacing: 1.5px;
+		&:after {
+			content: ">>";
+			position: relative;
+			left: 6px;
+			bottom: 2px;
+
+			font-size: 9px;
+		}
+	}
+ 	.f-work {
+ 		a {
+			color: $orange;
+			&:hover {
+				color: $blue;
+			}
+		}
+		&:after {
+			color: $purple;
+		}
+	}
+ 	.f-skinny {
+ 		a {
+			color: $green;
+			&:hover {
+				color: $orange;
+			}
+		}
+		&:after {
+			color: $orange;
+		}
+	}
+ 	.f-hire {
+ 		a {
+			color: $purple;
+			&:hover {
+				color: $green;
+			}
+		}
+		&:after {
+			color: $green;
+		}
+	}
+ 	.f-culture {
+ 		a {
+			color: $blue;
+			&:hover {
+				color: $grey;
+			}
+		}
+		&:after {
+			color: $grey;
+		}
+	}
+ 	.f-careers {
+ 		a {
+			color: $grey;
+			&:hover {
+				color: $brown;
+			}
+		}
+		&:after {
+			color: $brown;
+		}
+	}
+	img {
+		float: right;
+		padding: 20px;
+	}
+}
+@-webkit-keyframes flipIn {
+	0% {
+		opacity: 0;
+		-webkit-transform: scale(0.1);
+	}
+	100% {
+		opacity: 1;
+		-webkit-transform: scale(1.0);
+	}
+}

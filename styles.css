@@ -1,0 +1,400 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+*::-moz-selection {
+  background: #d36E56;
+  color: white;
+}
+
+*::selection {
+  background: #d36E56;
+  color: white;
+}
+
+h1 {
+  font-style: italic;
+  font-weight: lighter;
+}
+
+.careers-page-wrap {
+  margin: 0 auto;
+  padding-bottom: 60px;
+  background-color: #f6f0e9;
+  min-width: 1200px;
+  font-family: "Trebuchet MS", sans-serif;
+  text-align: center;
+  font-size: 16px;
+  letter-spacing: 1.5px;
+  color: #333;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  z-index: 5;
+}
+
+header h5 {
+  margin: 15px 0 0 50px;
+  font-size: 30px;
+  color: #bfbdbc;
+  font-weight: lighter;
+  font-style: italic;
+  letter-spacing: -1px;
+}
+
+.masthead {
+  height: 1000px;
+  background: url(images/hotel-bg.jpg) no-repeat;
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+
+.masthead h1 {
+  padding: 15% 0 60px;
+  font-size: 100px;
+  color: white;
+}
+
+.masthead span {
+  text-transform: uppercase;
+  font-size: 22px;
+  font-weight: bold;
+  letter-spacing: 1.5px;
+  color: #87a6a3;
+}
+
+.jobs {
+  min-width: 600px;
+  width: 800px;
+  height: 80px;
+  margin: 50px auto;
+}
+
+.jobs a {
+  font-size: 22px;
+  color: #e87f6f;
+  text-transform: uppercase;
+}
+
+.jobs a:hover {
+  color: #333;
+}
+
+.jobs li {
+  display: inline;
+}
+
+.hire {
+  height: 750px;
+  background-color: #f6f0e9;
+}
+
+.hire h1 {
+  padding: 60px;
+  font-size: 60px;
+  color: #97889c;
+}
+
+.hire p > a,
+.hire span > a {
+  color: #5f7a95;
+}
+
+.hire p > a:hover,
+.hire span > a:hover {
+  color: #333;
+}
+
+.hire p {
+  width: 700px;
+  margin: 0 auto;
+  text-align: left;
+  line-height: 30px;
+}
+
+.hire li {
+  float: left;
+}
+
+.hire li:nth-child(2) {
+  float: right;
+}
+
+.hire li:last-child {
+  padding-top: 10px;
+  clear: both;
+}
+
+.hire span {
+  color: #bfbdbc;
+}
+
+.careers {
+  height: 750px;
+  background-color: #75685f;
+}
+
+.careers h1 {
+  padding: 80px 0 30px;
+  width: 900px;
+  margin: 0 auto;
+  font-size: 60px;
+  color: #bfbdbc;
+}
+
+.careers .jobs {
+  width: 50%;
+}
+
+.careers li {
+  line-height: 50px;
+  margin: 0 50px;
+}
+
+.careers img {
+  margin-top: 60px;
+}
+
+.benefits {
+  height: 550px;
+  position: relative;
+}
+
+.benefits .is-active h3 {
+  font-size: 32px;
+  text-decoration: none;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.benefits .triangle {
+  position: absolute;
+  left: 50%;
+  bottom: -20px;
+  margin-left: -20px;
+  width: 0;
+  height: 0;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-top: 20px solid #fdfcc7;
+  z-index: 1000;
+}
+
+.benefits p {
+  display: none;
+  width: 80%;
+  margin: 20px auto;
+  text-align: left;
+  line-height: 30px;
+}
+
+.benefits .panel {
+  height: 225px;
+  width: 33.33%;
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+  float: left;
+}
+
+.benefits .top,
+.benefits .bottom {
+  height: 165px;
+  width: 100%;
+}
+
+.benefits .top h3,
+.benefits .bottom h3 {
+  top: 70px;
+}
+
+.benefits h3 {
+  position: relative;
+  font-size: 22px;
+  text-decoration: underline;
+  text-transform: uppercase;
+  color: white;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.benefits .top {
+  background-color: #fdfcc7;
+}
+
+.benefits .top h3 {
+  color: #bfbdbc;
+}
+
+.benefits .left {
+  background-color: #e87f6f;
+}
+
+.benefits .left h3 {
+  top: 90px;
+}
+
+.benefits .center {
+  background-color: white;
+  cursor: default;
+  pointer-events: none;
+}
+
+.benefits .center p {
+  display: block;
+  -webkit-animation: flipIn 0.5s ease;
+}
+
+.benefits .right {
+  background-color: #97889c;
+}
+
+.benefits .right h3 {
+  top: 90px;
+}
+
+.benefits .bottom {
+  clear: both;
+  background-color: #9d9b9a;
+}
+
+.your-spot {
+  position: relative;
+  height: 1100px;
+  background: url(images/your-spot-bg.jpg) no-repeat;
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+
+.your-spot a {
+  position: absolute;
+  width: 30px;
+  top: 35%;
+  left: 790px;
+  font-size: 22px;
+  color: #5f7a95;
+  text-transform: uppercase;
+}
+
+.stalk {
+  height: 140px;
+  background: url(images/stalk-bg.jpg) repeat #333333;
+  line-height: 140px;
+}
+
+.stalk a {
+  color: #e87f6f;
+  font-size: 40px;
+}
+
+footer {
+  text-align: left;
+  position: fixed;
+  bottom: -60px;
+  right: 0;
+  left: 0;
+  height: 60px;
+  background-color: #f6f0e9;
+  z-index: 1000;
+  clear: both;
+  overflow: hidden;
+  -webkit-transition: all 0.2s linear;
+}
+
+footer li {
+  padding: 0 60px 0 40px;
+  display: inline;
+  font-size: 20px;
+  line-height: 60px;
+  text-transform: uppercase;
+  font-weight: 800;
+  letter-spacing: 1.5px;
+}
+
+footer li:after {
+  content: ">>";
+  position: relative;
+  left: 6px;
+  bottom: 2px;
+  font-size: 9px;
+}
+
+footer .f-work a {
+  color: #e87f6f;
+}
+
+footer .f-work a:hover {
+  color: #5f7a95;
+}
+
+footer .f-work:after {
+  color: #97889c;
+}
+
+footer .f-skinny a {
+  color: #87a6a3;
+}
+
+footer .f-skinny a:hover {
+  color: #e87f6f;
+}
+
+footer .f-skinny:after {
+  color: #e87f6f;
+}
+
+footer .f-hire a {
+  color: #97889c;
+}
+
+footer .f-hire a:hover {
+  color: #87a6a3;
+}
+
+footer .f-hire:after {
+  color: #87a6a3;
+}
+
+footer .f-culture a {
+  color: #5f7a95;
+}
+
+footer .f-culture a:hover {
+  color: #bfbdbc;
+}
+
+footer .f-culture:after {
+  color: #bfbdbc;
+}
+
+footer .f-careers a {
+  color: #bfbdbc;
+}
+
+footer .f-careers a:hover {
+  color: #75685f;
+}
+
+footer .f-careers:after {
+  color: #75685f;
+}
+
+footer img {
+  float: right;
+  padding: 20px;
+}
+
+@-webkit-keyframes flipIn {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(0.1);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: scale(1);
+  }
+}
