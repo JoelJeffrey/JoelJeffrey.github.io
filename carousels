@@ -1,0 +1,91 @@
+<section class="carousels">
+
+        <article class="press">
+            <h2>Press</h2>
+            <div class="slideshow"
+                data-cycle-slides="> div.panel"
+                data-cycle-fx="scrollHorz"
+            >
+                <div class="panel">
+                    <img src="http://staging_haus_com.s3.amazonaws.com/img/temp/best.png" alt="Our Best" />
+                    <div class="caption">
+                        <h3>Some Headline One</h3>
+                        <p>adipisicing elit, sed do eiusmod tempor incididunt</p>
+                    </div>
+                </div>
+                <div class="panel">
+                    <img src="http://staging_haus_com.s3.amazonaws.com/img/temp/new.png" alt="New Work" />
+                    <div class="caption">
+                        <h3>Some Headline Two</h3>
+                        <p>voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem</p>
+                    </div>
+                </div>
+                <div class="panel">
+                    <img src="http://staging_haus_com.s3.amazonaws.com/img/temp/new.png" alt="New Work" />
+                    <div class="caption">
+                        <h3>Some Headline Three</h3>
+                        <p>voluptatem sequi nesciunt. Ut enim ad minima veniam, quis nostrum</p>
+                    </div>
+                </div>
+                <div class="panel">
+                    <img src="http://staging_haus_com.s3.amazonaws.com/img/temp/best.png" alt="Our Best" />
+                    <div class="caption">
+                        <h3>Some Headline Four</h3>
+                        <p>sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis</p>
+                    </div>
+                </div>
+
+                <div class="cycle-pager"></div>
+            </div>
+        </article>
+        .carousels {
+        height: 600px;
+        h2 {text-align: left;}
+        .press {
+            width: 25%;
+            background-color: $purple;
+            color: $brown;
+        } 
+        .awards {
+            width: 25%;
+            background-color: $yellow;
+            color: $gray;
+            h3 {color: $brown;}
+        }
+        .testimonials {
+            width: 50%;
+            background-color: $brown;
+            p {text-align: left; color: $purple;}
+        }
+    }
+     // div.hire-us {
+.carousels {
+    article {
+        height: 100%;
+        display: inline-block;
+        h2 {
+            margin: 20px 0 0 30px;
+        }
+        img {
+            position: relative;
+            top: 20px;
+        }
+        .caption {
+            position: absolute;
+            top: 335px;
+            padding: 0 30px;
+        }
+     
+    }
+    .slideshow {
+        float: left;
+        height: 85%;
+        background-color: transparent;
+        width: 100%;
+        .panel {
+            height: 100%;
+            width: 100%;
+            text-align: center;
+        }
+    }
+}
